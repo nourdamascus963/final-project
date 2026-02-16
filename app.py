@@ -3,7 +3,11 @@ from flask import Flask, jsonify, request
 app = Flask(__name__)
 
 products = []
-
+# Technical Debt:
+# - No input validation on product data
+# - No persistent storage (in-memory list only)
+# - No error handling for invalid indexes
+# These will be improved in future iterations.
 @app.route("/products", methods=["GET"])
 def get_products():
     return jsonify(products)
