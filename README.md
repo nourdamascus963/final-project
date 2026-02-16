@@ -17,3 +17,10 @@ The API supports creating, reading, updating, and deleting products.
 ## Installation
 ```bash
 pip install flask
+## API Usage
+
+GET /products  
+Returns all products.
+
+POST /products  
+Adds a new product (JSON body).
